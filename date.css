@@ -1,0 +1,114 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: aquamarine;
+}
+
+#whole-container{
+    margin-top: 10%;
+}
+
+#start{
+    height: 60%;
+    width: 50%;
+    text-align: center;
+    padding: 0;
+    margin: auto;
+    background-color: blueviolet;
+    border: solid 0px hidden;
+    border-radius: 10%;
+}
+#start h1{
+    padding-top: 15px;
+    color: #ffffff;
+    font-size: 5rem;
+}
+#start button{
+    height: 100px;
+    width: 350px;
+    font-size: 2rem;
+    color: #ffffff;
+    background-color: rgb(66, 21, 109);
+    border: 0px hidden;
+    border-radius: 100px;
+}
+
+#ask_container{
+    display: none;
+    height: 60%;
+    width: 80%;
+    text-align: center;
+    padding: 0;
+    margin: auto;
+    background-color: blueviolet;
+    border: solid 0px hidden;
+    border-radius: 10%;
+}
+#ask_container p{
+    padding-top: 25px;
+    color: #ffffff;
+    font-size: 3rem;
+}
+#ask_container button{
+    position: absolute;
+    height: 70px;
+    width: 200px;
+    margin: 0px 5px 5px 0px;
+    font-size: 2rem;
+    color: #ffffff;
+    background-color: rgb(66, 21, 109);
+    border: 0px hidden;
+    border-radius: 100px;
+}
+.btnno{
+    right: 50%;
+    transition: left 0.3s, top 0.3s;
+}
+#btnyes{
+    cursor: pointer;
+}
+
+#yes_container{
+    display: none;
+    height: 60%;
+    width: 50%;
+    text-align: center;
+    padding: 0;
+    margin: auto;
+    background-color: blueviolet;
+    border: solid 0px hidden;
+    border-radius: 10%;
+}
+#yes_container p{
+    color: #ffffff;
+    font-size: 5rem;
+    padding-top: 20%;
+    margin: 0 0 5% 0;
+}
+#yes_container h4{
+    color: #ffffff;
+}
+
+
+#try{
+    height: 60%;
+    width: 80%;
+    text-align: center;
+    padding: 0;
+    margin: auto;
+    background-color: blueviolet;
+    border: solid 0px hidden;
+    border-radius: 10%;
+}
+#try button{
+    position: absolute;
+    height: 70px;
+    width: 200px;
+    margin: 0px 5px 5px 0px;
+    font-size: 2rem;
+    color: #ffffff;
+    background-color: rgb(66, 21, 109);
+    border: 0px hidden;
+    border-radius: 100px;
+}

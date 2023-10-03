@@ -1,0 +1,72 @@
+<html lang=en>
+    <head>
+        <title>
+            Date?
+        </title>
+        <link rel="stylesheet" type="text/css" href="date.css">
+    </head>
+    <body>
+        <div id="whole-container">
+            <div id="start">
+               <h1>hola mi amor!</h1>
+               <button  id="askbtn" type="button">click me!</button>
+            </div>
+
+            <script>
+                
+                    
+
+                    document.getElementById("askbtn").addEventListener("click", function(){
+                        ask_container.style.display="block";
+                        start.style.display="none";
+                    });
+
+                
+            </script>
+
+            <div id="ask_container">
+                <p>wanna go on a date with me?</p>
+                <button type="button" id="btnyes">YES</button>
+                <script>
+                    document.getElementById("btnyes").addEventListener("click", function(){
+                        yes_container.style.display="block";
+                        ask_container.style.display="none"
+                    });
+                </script>
+
+                <button type="button" class="btnno">NO</button>
+                <script>
+                    const btnno = document.querySelector('button.btnno')
+                    btnno.addEventListener("click", moveHover)
+                    
+                    function moveHover(){
+                        const x=Math.floor(Math.random()*500)+1;
+                        const y=Math.floor(Math.random()*500)+1;
+
+                        btnno.style.left=x+"px"
+                        btnno.style.top=y+"px"
+                    }
+                
+                </script>
+            </div>
+            <div id="yes_container">
+                <p>great!</p>
+
+                <form>
+                    <h4>what date do you prefer?</h4>
+                    <input type="date" id="date">
+                    <input type="time" id="time">
+                    <button onclick="enterdate()" type="submit">Enter</button>
+                </form>
+                <script>
+                    function enterdate(){
+                        const date = document.getElementById('date');
+
+                        alert("great!! now we have a date!");
+                    }
+                </script>
+                
+            </div>
+        </div>
+    </body>
+</html>
